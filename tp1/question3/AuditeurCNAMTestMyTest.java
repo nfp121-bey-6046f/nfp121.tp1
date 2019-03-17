@@ -1,7 +1,7 @@
 package question3;
 
 /**
- * Classe-test AuditeurCNAMTest.
+ * Classe-test AuditeurCNAMTestMyTest.
  * 
  * @author (votre nom)
  * @version (un numéro de version ou une date)
@@ -23,7 +23,7 @@ package question3;
  *          méthode Test sera précédé d'un appel de setUp(), qui réalise les
  *          engagements, et suivi d'un appel à tearDown(), qui les détruit.
  */
-public class AuditeurCNAMTest extends junit.framework.TestCase {
+public class AuditeurCNAMTestMyTest extends junit.framework.TestCase {
     // Définissez ici les variables d'instance nécessaires à vos engagements;
     // Vous pouvez également les saisir automatiquement du présentoir
     // à l'aide du menu contextuel "Présentoir --> Engagements".
@@ -31,9 +31,9 @@ public class AuditeurCNAMTest extends junit.framework.TestCase {
     // du présentoir (les objets sans constructeur, comme int, float, etc.).
 
     /**
-     * Constructeur de la classe-test AuditeurCNAMTest.
+     * Constructeur de la classe-test AuditeurCNAMTestMyTest.
      */
-    public AuditeurCNAMTest() {
+    public AuditeurCNAMTestMyTest() {
     }
 
     /**
@@ -66,17 +66,17 @@ public class AuditeurCNAMTest extends junit.framework.TestCase {
 
     /** Un test de la méthode toString(). */
     public void test_toString() {
-        question3.AuditeurCNAM auditeur1 = new question3.AuditeurCNAM("Dupont",
-                "paul", "03-1234");
-        assertEquals("Dupont paul login : dupont_p", auditeur1.toString());
+        question3.AuditeurCNAM auditeur1 = new question3.AuditeurCNAM("Ahmad",
+                "bader", "03-1234");
+        assertEquals("Ahmad bader login : ahmad_b", auditeur1.toString());
     }
 
     public void test_nom_court() {
-        question3.AuditeurCNAM auditeur1 = new question3.AuditeurCNAM("paul",
-                "pierre", "12345");
-        assertEquals("paul", auditeur1.nom());
-        assertEquals("pierre", auditeur1.prenom());
-        assertEquals("paul_p", auditeur1.login());
+        question3.AuditeurCNAM auditeur1 = new question3.AuditeurCNAM("elie",
+                "fares", "12345");
+        assertEquals("elie", auditeur1.nom());
+        assertEquals("fares", auditeur1.prenom());
+        assertEquals("elie_f", auditeur1.login());
     }
 
     public void test_nom_court_bis() {
@@ -98,10 +98,10 @@ public class AuditeurCNAMTest extends junit.framework.TestCase {
 
     public void test_nom_compose() {
         question3.AuditeurCNAM auditeur1 = new question3.AuditeurCNAM(
-                "Ton-Ton", "max", "12345");
-        assertEquals("Mr Ton-Ton max ", "Ton-Ton", auditeur1.nom());
-        assertEquals("Mr Ton-Ton max ", "max", auditeur1.prenom());
-        assertEquals("Mr Ton-Ton max ", "ton_to_m", auditeur1.login());
+                "Dad-Dad", "max", "12345");
+        assertEquals("Mr Dad-Dad max ", "Dad-Dad", auditeur1.nom());
+        assertEquals("Mr Dad-Dad max ", "max", auditeur1.prenom());
+        assertEquals("Mr Dad-Dad max ", "dad_da_m", auditeur1.login());
     }
 
     public void test_nom_court_avec_particule() {
@@ -123,13 +123,14 @@ public class AuditeurCNAMTest extends junit.framework.TestCase {
             auditeur1.login());
     }
     public void test_nom_avec_quote_et_accent() {
-        question3.AuditeurCNAM auditeur1 = new question3.AuditeurCNAM("'Chloé'",
+        question3.AuditeurCNAM auditeur1 = new question3.AuditeurCNAM("'Chloé",
                 "chloé", "12345");
         assertEquals("Mme Chloé chloé ", "Chloé", auditeur1.nom());
         assertEquals("Mme Chloé chloé ", "chloé", auditeur1.prenom());
         assertEquals(" nom avec accent ('' devient _) ? ", "chloe_c",
             auditeur1.login());
     }
+
     public void testEee()
     {
     }
