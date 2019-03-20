@@ -1,8 +1,8 @@
 #BlueJ package file
-dependency1.from=AuditeurCNAMTestMyTest
+dependency1.from=AuditeurCNAMTest
 dependency1.to=AuditeurCNAM
 dependency1.type=UsesDependency
-dependency2.from=AuditeurCNAMTest
+dependency2.from=AuditeurCNAMTestMyTest
 dependency2.to=AuditeurCNAM
 dependency2.type=UsesDependency
 objectbench.height=102
